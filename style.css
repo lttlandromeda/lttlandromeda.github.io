@@ -107,14 +107,15 @@ font-weight: 800;
   text-decoration: none;
 }
 .block2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background: #9d613f;
-  gap: 110px;
   min-height: 110vh;
-  padding: 0px 110px;
-  justify-content: center;
+    min-width: 90vw;
+    background-color: #9d613f;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 110px;
 }
 .textblock2 {
   float: right;
@@ -169,14 +170,15 @@ font-weight: 800;
   float: left;
 }
 .block3 {
+  min-height: 110vh;
+  min-width: 90vw;
+  background-color: #263248;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  background: #263248;
-  gap: 110px;
-  min-height: 110vh;
-  padding: 0px 110px;
   justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 110px;
 }
 .sushi {
   background: #ffffff;
@@ -193,15 +195,16 @@ font-weight: 800;
   line-height: 29px;
 }
 .block4 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background: #9d613f;
-  gap: 110px;
   min-height: 110vh;
-  min-width: 110vh;
-  padding: 0px 110px;
-  justify-content: center;
+    min-width: 90vw;
+    background-color: #9d613f;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 110px;
+  
 }
 .h5 {
   font-family: "Montserrat";
@@ -276,14 +279,15 @@ font-weight: 800;
   justify-content: center;
 }
 .block5 {
+  min-height: 180vh;
+  min-width: 90vw;
+  background-color: #263248;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  min-height: 150vh;
-  padding: 0px 110px;
   justify-content: center;
-  gap: 90px;
-  background: #263248;
+  align-items: center;
+  align-self: center;
+  gap: 110px;
 }
 .photo {
   font-family: "Montserrat";
@@ -323,14 +327,16 @@ font-weight: 800;
   align-items: center;
 }
 .block6 {
+  padding: 0px 80px;
+  justify-content: center;
+  min-height: 50vh;
+  min-width: 80vw;
+  background-color:#1d2022; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background: #1d2022;
-  min-height: 50vh;
-  padding: 0px 110px;
-  justify-content: center;
+  align-self: center;
 }
 .steam {
   display: flex;
