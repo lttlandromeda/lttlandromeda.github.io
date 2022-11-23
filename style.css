@@ -1,12 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #263248;
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
 
   margin: 0px;
-}
-html {
-  scroll-behavior: smooth;
 }
 h1 {
   font-style: semibold;
@@ -37,7 +40,6 @@ h2 {
   margin-top: 0px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #9d613f;
   align-items: right;
   align-self: right;
 }
@@ -83,7 +85,7 @@ h2 {
   border-radius: 16px;
 }
 .menu a.activ:hover {
-  color: #ffd38f;
+  color: #e1808a;
 }
 .me {
   padding: 25px;
@@ -111,7 +113,7 @@ h2 {
 .block2 {
   min-height: 110vh;
   min-width: 90vw;
-  background-color: #9d613f;
+  background: #8c444c;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -199,7 +201,7 @@ h2 {
 .block4 {
   min-height: 110vh;
   min-width: 90vw;
-  background-color: #9d613f;
+  background: #8c444c;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -374,27 +376,35 @@ h2 {
 }
 .me:hover {
   transform: rotate(-2deg);
+  transition: 0.3s ease-in-out;
 }
 .fhiona:hover {
   transform: rotate(5deg);
+  transition: 0.3s ease-in-out;
 }
 .sushi:hover {
   transform: rotate(-5deg);
+  transition: 0.3s ease-in-out;
 }
 .photo1:hover {
   transform: rotate(-2deg);
+  transition: 0.3s ease-in-out;
 }
 .photo2:hover {
   transform: rotate(-3deg);
+  transition: 0.3s ease-in-out;
 }
 .photo3:hover {
   transform: rotate(-4deg);
+  transition: 0.3s ease-in-out;
 }
 .photo4:hover {
   transform: rotate(4deg);
+  transition: 0.3s ease-in-out;
 }
 .photo5:hover {
   transform: rotate(9deg);
+  transition: 0.3s ease-in-out;
 }
 .extra2 {
   font-family: "Montserrat";
@@ -402,5 +412,29 @@ h2 {
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
-  color: #bf9279;
+  color: #ae767d;
+}
+.links:hover {
+  color: #e1808a;
+  opacity: 100;
+}
+.pictelegram {
+  width: 32px;
+}
+.picinsta {
+  width: 32px;
+}
+.picbehance {
+  width: 32px;
+}
+.picsteam {
+  width: 32px;
+}
+.pictelegramhover {
+  width: 32px;
+  position: absolute;
+  left: 120px;
+  right: 0;
+
+  opacity: 0;
 }
