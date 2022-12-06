@@ -35,9 +35,10 @@ h2 {
   font-size: 1.5vw;
   margin-left: 190px;
   margin-top: 0px;
+  max-width: 50%;
 }
 .introdusion {
-  background-image: url(introdusion.png);
+  background-image: url(DSC05829.png);
   min-height: 110vh;
   min-width: 90vh;
   display: flex;
@@ -55,7 +56,7 @@ h2 {
   white-space: nowrap;
 }
 .navbar {
-  background-color: #1d2022;
+  background-color: #060905;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -88,9 +89,11 @@ h2 {
   margin: 0px 10px;
   border: 0px solid transparent;
   border-radius: 16px;
+  transition: all 0.15s ease-in 0s;
 }
 .menu a.activ:hover {
-  color: #e1808a;
+  color: #ccb153;
+  transition: all 0.15s ease-in 0s;
 }
 .me {
   padding: 25px;
@@ -119,7 +122,7 @@ h2 {
 .block2 {
   min-height: 110vh;
   min-width: 90vw;
-  background: #8c444c;
+  background: #211608;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -129,6 +132,7 @@ h2 {
 }
 .textblock2 {
   float: right;
+  max-width: 33%;
 }
 .fhiona {
   background: #ffffff;
@@ -175,15 +179,16 @@ h2 {
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
-  color: #758a9f;
+  color: #5f564b;
 }
 .textblock3 {
   float: left;
+  max-width: 33%;
 }
 .block3 {
   min-height: 110vh;
   min-width: 90vw;
-  background-color: #263248;
+  background-color: #4f3e2a;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -192,9 +197,9 @@ h2 {
   gap: 110px;
 }
 
-.block4 a {
-  display: flex;
+.sushilink {
   width: 20%;
+  display: flex;
 }
 
 .sushi {
@@ -204,6 +209,10 @@ h2 {
   padding: 25px 25px 80px;
   width: 100%;
   transition: 0.3s ease-in-out;
+}
+.textblock4 {
+  float: left;
+  max-width: 33%;
 }
 .food {
   font-family: "Montserrat";
@@ -215,7 +224,7 @@ h2 {
 .block4 {
   min-height: 110vh;
   min-width: 90vw;
-  background: #8c444c;
+  background: #211608;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -238,6 +247,9 @@ h2 {
   font-size: 24px;
   line-height: 29px;
   text-align: center;
+}
+.textblock5 {
+  max-width: 32%;
 }
 .photo1 {
   padding: 25px 25px 80px;
@@ -303,7 +315,7 @@ h2 {
 .block5 {
   min-height: 180vh;
   min-width: 90vw;
-  background-color: #263248;
+  background-color: #4f3e2a;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -353,7 +365,7 @@ h2 {
   justify-content: center;
   min-height: 50vh;
   min-width: 80vw;
-  background-color: #1d2022;
+  background-color: #060905;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -393,6 +405,8 @@ h2 {
   text-decoration: none;
   color: #ffffff;
   transition: all 0.15s ease-in 0s;
+  display: flex;
+  gap: 10px;
 }
 .me:hover {
   transform: rotate(-2deg);
@@ -432,14 +446,14 @@ h2 {
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
-  color: #ae767d;
+  color: #5f564b;
 }
 .links:hover {
-  color: #e1808a;
+  color: #ccb153;
   transition: all 0.15s ease-in 0s;
 }
-.behance-svg:hover {
-  fill: #e1808a;
+.links:hover svg {
+  fill: #ccb153;
   transition: all 0.15s ease-in 0s;
 }
 .behance-svg {
@@ -450,23 +464,152 @@ h2 {
   width: 32px;
   transition: all 0.15s ease-in 0s;
 }
-.instagram-svg:hover {
-  fill: #e1808a;
-  transition: all 0.15s ease-in 0s;
-}
+
 .telegram-svg {
   width: 32px;
-  transition: all 0.15s ease-in 0s;
-}
-.telegram-svg:hover {
-  fill: #e1808a;
   transition: all 0.15s ease-in 0s;
 }
 .steam-svg {
   width: 32px;
   transition: all 0.15s ease-in 0s;
 }
-.steam-svg:hover {
-  fill: #e1808a;
-  transition: all 0.15s ease-in 0s;
+
+.textblock4 em {
+  color: #a1918d;
+  font-style: normal;
+}
+.noa {
+  text-decoration: none;
+}
+.textblock2 em {
+  color: #a1918d;
+  font-style: normal;
+}
+.textblock3 em {
+  color: #a7927a;
+  font-style: normal;
+}
+.textblock5 em {
+  color: #a7927a;
+  font-style: normal;
+}
+.parallax1 {
+  z-index: 12;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  top: 1300px;
+  left: 5px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  animation: glow 1s infinite alternate;
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px 5px #ab801c;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #fff4d2;
+  }
+}
+.parallax2 {
+  z-index: 3;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  top: 1300px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  animation: glow 1s infinite alternate;
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px 5px #ab801c;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #fff4d2;
+  }
+}
+.parallax3 {
+  z-index: 3;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  display: flex;
+  justify-content: right;
+  top: 1300px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  animation: glow 1s infinite alternate;
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px 5px #ab801c;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #fff4d2;
+  }
+}
+.parallax4 {
+  z-index: 3;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  top: 1500px;
+  left: 50px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  animation: glow 1s infinite alternate;
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px 5px #ab801c;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #fff4d2;
+  }
+}
+.parallax5 {
+  z-index: 3;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  top: 1300px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  animation: glow 1s infinite alternate;
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px 5px #ab801c;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #fff4d2;
+  }
 }
