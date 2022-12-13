@@ -15,7 +15,7 @@ h1 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 5vw;
+  font-size: 96pt;
   margin-left: 190px;
   margin-bottom: 15px;
 }
@@ -23,7 +23,7 @@ h2 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 3vw;
+  font-size: 48pt;
   margin-left: 190px;
   margin-top: 0px;
   margin-bottom: 15px;
@@ -32,7 +32,7 @@ h2 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 1.5vw;
+  font-size: 24pt;
   margin-left: 190px;
   margin-top: 0px;
   max-width: 50%;
@@ -40,7 +40,6 @@ h2 {
 .introdusion {
   background-image: url(introdusion.jpg);
   min-height: 110vh;
-  min-width: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,7 +90,7 @@ h2 {
   border-radius: 16px;
   transition: all 0.15s ease-in 0s;
 }
-.menu a.activ:hover {
+.menu a:hover {
   color: #ccb153;
   transition: all 0.15s ease-in 0s;
 }
@@ -182,7 +181,7 @@ h2 {
   color: #5f564b;
 }
 .textblock3 {
-  float: left;
+  float: right;
   max-width: 33%;
 }
 .block3 {
@@ -257,7 +256,7 @@ h2 {
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transform: rotate(1.41deg);
-  width: 20%;
+  width: 100%;
   transition: 0.3s ease-in-out;
 }
 .photo2 {
@@ -266,7 +265,7 @@ h2 {
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transform: rotate(-8.64deg);
-  width: 20%;
+  width: 100%;
   transition: 0.3s ease-in-out;
 }
 .photo3 {
@@ -275,7 +274,7 @@ h2 {
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transform: rotate(-7.23deg);
-  width: 20%;
+  width: 100%;
   transition: 0.3s ease-in-out;
 }
 .photo4 {
@@ -284,7 +283,7 @@ h2 {
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transform: rotate(2.63deg);
-  width: 20%;
+  width: 100%;
   transition: 0.3s ease-in-out;
 }
 .photo5 {
@@ -293,7 +292,7 @@ h2 {
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transform: rotate(13.13deg);
-  width: 20%;
+  width: 100%;
   transition: 0.3s ease-in-out;
 }
 .photofirst {
@@ -494,7 +493,7 @@ h2 {
   font-style: normal;
 }
 .parallax1 {
-  z-index: 12;
+  z-index: 5;
   position: absolute;
   margin: 0px;
   padding: 0px;
@@ -503,8 +502,8 @@ h2 {
   justify-content: left;
   top: 1300px;
   left: 5px;
-  width: 200px;
-  height: 200px;
+  width: 50px;
+  height: 50px;
   border-radius: 100px;
   background-color: #ffffff;
   animation: glow 1s infinite alternate;
@@ -612,4 +611,11 @@ h2 {
   to {
     box-shadow: 0 0 10px 10px #fff4d2;
   }
+}
+.photos a {
+  display: flex;
+  width: 20%;
+}
+.menu .active a {
+  color: #ccb153;
 }
