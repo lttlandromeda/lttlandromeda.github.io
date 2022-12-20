@@ -1,390 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Andromeda</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mobile.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    <meta
-      property="og:image"
-      content="https://lttlandromeda.github.io/introdusion.jpg"
-    />
-    <meta
-      name="description"
-      content="Невеликий сайтик на якому ви дізнаєтесь трохи фактів про мене :)"
-    />
-  </head>
-  <body>
-    <section>
-      <div class="header">
-        <div class="navbar">
-          <a class="logo" href="#logo">ANDROMEDA</a>
-          <ul class="menu">
-            <li>
-              <a href="#aboutme" >Про мене</a>
-            </li>
-            <li>
-              <a href="#parrots" >Папуги</a>
-            </li>
-            <li>
-              <a href="#sushi" >Суші</a>
-            </li>
-            <li>
-              <a href="#photo" >Фото</a>
-            </li>
-            <li>
-              <a href="#contacts">Контакти</a>
-            </li>
-          </ul>
-        </div>
-      </div>
 
-      <div class="introdusion" id="logo">
-        <div class="textblock1"><h1>Привіт!</h1>
+<head>
+  <title>Andromeda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="locomotive-scroll.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mobile.css" />
+  <link rel="stylesheet" href="tablet.css" />
+
+  <link href="dist/hamburgers.css"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <meta property="og:image" content="https://lttlandromeda.github.io/introdusion.jpg" />
+  <meta name="description" content="Невеликий сайтик на якому ви дізнаєтесь трохи фактів про мене :)" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/css/lightgallery.min.css" />
+</head>
+
+<body>
+  <div class="header">
+    <div class="navbar">
+      <div class="logo"><a href="#logo" data-scroll-to>ANDROMEDA</a></div>
+      <ul class="menu">
+        <li>
+          <a href="#aboutme" data-scroll-to>Про мене</a>
+        </li>
+        <li>
+          <a href="#parrots" data-scroll-to>Папуги</a>
+        </li>
+        <li>
+          <a href="#sushi" data-scroll-to>Суші</a>
+        </li>
+        <li>
+          <a href="#photo" data-scroll-to>Фото</a>
+        </li>
+        <li>
+          <a href="#contacts" data-scroll-to>Контакти</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div data-scroll-container>
+    <div data-scroll-section class="introdusion"  data-scroll=""
+    data-scroll-repeat="true"
+    data-scroll-call="logo" id="logo">
+      <div data-scroll data-scroll-speed="8" class="textblock1">
+        <h1>Привіт!</h1>
         <h2>Мене звати Олена!</h2>
         <p class="textintrodusion">
           Я студенка ЛНАМ 3го курсу Графічного Дизайну. На цьому сайті ви
           дізнайється трохи інформації про мене :)
-        </p></div>
+        </p>
       </div>
-      <div class="block2" id="aboutme">
-        <img class="me" src="MEE.jpg" width="15%" title="Моя фотографія" />
-        <div
-          class="textblock2"
-          data-aos="fade-left"
-          data-aos-offset="500"
-          data-aos-duration="500"
-        >
-          <p class="h4">Про Мене</p>
-          <ul class="about">
-            <li>
-              <a
-                >Хочу бути <em>UX/Ui дизайнером</em>, але може мені пощастить і
-                я стану гейм дизайнером.
-              </a>
-            </li>
-            <li>
-              <a
-                >По системі типування Маєрса-Бріггса я
-                <em>INTJ</em>
-                <a
-                  class="links"
-                  href="https://www.16personalities.com/intj-personality"
-                  target="_blank"
-                  style="color: #5f564b"
-                  >(детальніше хто це)</a
-                >
-              </a>
-            </li>
-            <li>
-              <a
-                >Зараз активно вивчаю
-                <em>англійську мову</em>
-                по програмі Oxford University Press
-              </a>
-            </li>
-            <li>
-              <a
-                >Я обожнюю проводити вільний час за відеоіграми, в основному
-                <em>головоломки</em></a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="block3" id="parrots">
-        <div
-          class="textblock3"
-          data-aos="fade-right"
-          data-aos-offset="500"
-          data-aos-duration="500"
-        >
-          <p class="h3">Папуги</p>
-          <p class="parrot">
-            Я власниця <em>4 милих папужок</em>. Вони вже старенькі, але за своє
-            життя так і не привикли до рук та не навчиличь говорити Але я все
-            одно їх дуже люблю :)
-          </p>
-          <p class="names">Їх імена:</p>
-          <ul class="name" style="color: #a7927a">
-            <li>Данка</li>
-            <li>Арсенчик</li>
-            <li>Фіонка</li>
-            <li>Граф</li>
-          </ul>
-          <p class="extra">(Cправа ви бачите фото Фіонки)</p>
-        </div>
-        <img class="fhiona" src="Fhiona.jpg" width="15%" title="Фіонка" />
-      </div>
-      <div class="block4" id="sushi">
-        <a
-          class="sushilink"
-          href="https://www.youtube.com/watch?v=40MiH9-FQ5w&t=4s"
-          target="_blank"
-          ><img
-            class="sushi"
-            src="sushi.jpg"
-            width="15%"
-            title="Футомакі з лососем"
-        /></a>
-        <div
-          class="textblock4"
-          data-aos="fade-left"
-          data-aos-offset="500"
-          data-aos-duration="500"
-        >
-          <p class="h4">Cуші</p>
-          <p class="food">
-            Досить велику частину мене займає моя любов до
-            <em>кулінарії</em>, але окрім цього я працювала сушистом у двох
-            закладах. Один з цих закладів був
-            <a
-              class="noa"
-              href="https://noa.ua/en/"
-              target="_blank"
-              style="color: #a1918d"
-              >ресторан НОА</a
-            >. Надіюсь, я більше ніколи не повернусь на кухню, а буду готувати
-            лише для себе та своїх близьких
-          </p>
-          <p class="extra2">(тримайте картинку мого першого рола)</p>
-        </div>
-      </div>
-      <div class="block5" id="photo">
-        <div
-          class="textblock5"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-        >
-          <p class="h5">Фото</p>
-          <p class="photo">
-            Раніше я дуже захоплюваласть
-            <em>Фотографією</em>, тому ловіть декілька світлин з моєї колеції
-          </p>
-        </div>
-        <div class="photos">
-          <div class="photofirst">
-            <a href="Photo_1.jpg" target="_blank"
-              ><img
-                class="photo1"
-                src="Photo_1.jpg"
-                width="15%"
-                title="Захід сонця"
-            /></a>
-            <a href="Photo_2.jpg" target="_blank"
-              ><img
-                class="photo2"
-                src="Photo_2.jpg"
-                width="15%"
-                title="Вечірка"
-            /></a>
-          </div>
-          <div class="photosecond">
-            <a href="Photo_3.jpg" target="_blank"
-              ><img class="photo3" src="Photo_3.jpg" width="15%" title="Котик"
-            /></a>
-            <a href="Photo_4.jpg" target="_blank"
-              ><img
-                class="photo4"
-                src="Photo_4.jpg"
-                width="15%"
-                title="Нутелла"
-            /></a>
-            <a href="Photo_5.jpg" target="_blank"
-              ><img
-                class="photo5"
-                src="Photo_5.jpg"
-                width="15%"
-                title="Лісопарк"
-            /></a>
-          </div>
-        </div>
-      </div>
-      <div class="block6" id="contacts">
-        <p class="textcontacts">Посилання на мої соц мережі</p>
-        <ul class="linkcontacts">
-          <li class="steam">
-            <a
-              class="links"
-              href="https://steamcommunity.com/profiles/76561199041801371/"
-              target="_blank"
-            >
-              <svg
-                version="1.1"
-                class="steam-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 32 32"
-                style="enable-background: new 0 0 32 32"
-                xml:space="preserve"
-                fill="#ffffff"
-              >
-                <g>
-                  <path
-                    class="st1"
-                    d="M11.1,22.9c0.6,0.3,1.3,0.2,1.7-0.4c0.5-0.6,0.3-1.5-0.4-1.9l-3.3-2c-0.7,0.6-1.1,1.5-1.3,2.4L11.1,22.9z"
-                  />
-                  <path
-                    class="st1"
-                    d="M16,2.2C8.9,2.2,3,7.6,2.2,14.6l6.9,4.1c0.7-0.7,1.7-1.1,2.8-1.1l2.8-4.3c0-3.1,2.5-5.6,5.6-5.6
-           s5.6,2.5,5.6,5.6s-2.5,5.6-5.6,5.6L16,21.6c0,2.3-1.8,4.1-4.1,4.1s-4.1-1.8-4.1-4.1c0-0.2,0-0.4,0-0.6l-5.5-3.1
-           C3.2,24.6,9,29.8,16,29.8c7.6,0,13.8-6.2,13.8-13.8C29.8,8.4,23.6,2.2,16,2.2z"
-                  />
-                  <circle class="st1" cx="20.2" cy="13.3" r="2.8" />
-                </g>
-                <path
-                  class="st1"
-                  d="M12.4,20.6l-3.3-2c-0.7,0.6-1.1,1.5-1.3,2.4l3.2,1.8c0.6,0.3,1.3,0.2,1.7-0.4C13.3,21.9,13.1,21,12.4,20.6z"
-                />
-              </svg>
-              Steam</a
-            >
+    </div>
+    <div data-scroll-section class="block2" id="aboutme"  data-scroll=""
+    data-scroll-repeat="true"
+    data-scroll-call="aboutme">
+      <div data-scroll  data-scroll-speed="8" class="photos-item"><img  class="me" src="images/MEE.jpg" 
+        title="Моя фотографія" /></div>
+      <div data-scroll data-scroll-speed="5" class="textblock2">
+        <p class="h4">Про Мене</p>
+        <ul class="about">
+          <li>
+            <a>Хочу бути <em>UX/Ui дизайнером</em>, але може мені пощастить і
+              я стану гейм дизайнером.
+            </a>
           </li>
-          <li class="behance">
-            <a
-              class="links"
-              href="https://www.behance.net/olena_viytovych"
-              target="_blank"
-            >
-              <!-- <img class="picbehance" src="Behance-08.svg" />  -->
-
-              <svg
-                version="1.1"
-                class="behance-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 32 32"
-                style="enable-background: new 0 0 32 32"
-                xml:space="preserve"
-                fill="#ffffff"
-              >
-                <path
-                  class="st1"
-                  d="M10.8,12.4v3c0,0,2.7,0.4,2.7-1.4S12,12.4,10.8,12.4z"
-                />
-                <path
-                  class="st1"
-                  d="M10.8,17.1v3c0,0,2.7,0.4,2.7-1.4C13.5,17.1,12.4,17.1,10.8,17.1z"
-                />
-                <path
-                  class="st1"
-                  d="M25.8,4.2H6.6C5.1,4.2,4,5.4,4,6.8v19.2c0,1.4,1.2,2.6,2.6,2.6h19.2c1.4,0,2.6-1.2,2.6-2.6V6.8
-	C28.4,5.4,27.2,4.2,25.8,4.2z M18.1,10.7h5V12h-5V10.7z M13.1,22.2H8.7V10.7c0,0,3.6,0,4.3,0c0.7,0,2.8,0.6,2.8,2.8
-	c0,1.9-1.5,2.7-1.5,2.7s1.6,0.4,1.6,2.7C15.9,22.1,13.1,22.2,13.1,22.2z M24.4,18.6l-4.7,0c0,0.8,0.4,2,1.5,2
-	c1.3,0.1,2.1-0.8,2.1-0.8l1,1.2c-0.9,0.9-1.4,1.3-3.2,1.3c-2.4,0-3.4-2-3.4-4.4c0-2.5,0.8-4.4,3.4-4.4c2.4,0,3.2,2,3.2,4.4
-	C24.4,18.1,24.4,18.3,24.4,18.6z"
-                />
-                <path
-                  class="st1"
-                  d="M19.8,17.1h2.3c0,0,0.3-2-1-2C19.8,15.1,19.8,15.9,19.8,17.1z"
-                />
-              </svg>
-
-              Behance</a
-            >
+          <li>
+            <a>По системі типування Маєрса-Бріггса я
+              <em>INTJ</em>
+              <a class="link" href="https://www.16personalities.com/intj-personality" target="_blank"
+                style="color: #5f564b">(детальніше хто це)</a>
+            </a>
           </li>
-          <li class="instagram">
-            <a
-              class="links"
-              href="https://www.instagram.com/lenaaaa.vijt_"
-              target="_blank"
-              ><svg
-                version="1.1"
-                class="instagram-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 32 32"
-                style="enable-background: new 0 0 32 32"
-                xml:space="preserve"
-                fill="#ffffff"
-              >
-                <circle class="st1" cx="16" cy="16" r="4.2" />
-                <path
-                  class="st1"
-                  d="M21.2,3.3H10.9c-4.2,0-7.6,3.4-7.6,7.6v10.3c0,4.2,3.4,7.6,7.6,7.6h10.3c4.2,0,7.6-3.4,7.6-7.6V10.9
-           C28.7,6.7,25.3,3.3,21.2,3.3z M16,22.9c-3.8,0-6.9-3.1-6.9-6.9s3.1-6.9,6.9-6.9c3.8,0,6.9,3.1,6.9,6.9S19.8,22.9,16,22.9z M24.2,8.8
-           c-0.8,0-1.4-0.6-1.4-1.4c0-0.8,0.6-1.4,1.4-1.4s1.4,0.6,1.4,1.4C25.6,8.2,25,8.8,24.2,8.8z"
-                />
-              </svg>
-              Instagram</a
-            >
+          <li>
+            <a>Зараз активно вивчаю
+              <em>англійську мову</em>
+              по програмі Oxford University Press
+            </a>
           </li>
-          <li class="telegram">
-            <a class="links" href="https://t.me/lttlandromeda" target="_blank"
-              ><svg
-                version="1.1"
-                class="telegram-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 32 32"
-                style="enable-background: new 0 0 32 32"
-                xml:space="preserve"
-                fill="#ffffff"
-              >
-                <path
-                  class="st1"
-                  d="M25.9,3.2L3,12.7c-2.3,1-2.2,4.3,0.2,5.1l5.2,1.7c0,0,0.1,0,0.1,0.1l1.8,5.5c0.7,2.2,3.6,2.7,5,0.9l1.5-1.9
-           c0-0.1,0.1-0.1,0.2,0l4,3.7c1.6,1.5,4.3,0.7,4.8-1.5L30,6.6C30.5,4.2,28.2,2.2,25.9,3.2z M26.6,6.7L23,25.3c0,0.2-0.2,0.3-0.4,0.1
-           l-5.6-4.8c-0.1-0.1-0.2-0.1-0.3,0l-3,2.5c-0.2,0.1-0.4,0-0.4-0.2l0.6-3.6c0,0,0-0.1,0.1-0.1l7.5-7.8c0.2-0.2,0-0.5-0.3-0.4L10,17.2
-           c-0.1,0-0.1,0-0.2,0l-4.2-1.7c-0.2-0.1-0.2-0.4,0-0.4l20.6-8.6C26.4,6.4,26.6,6.6,26.6,6.7z"
-                />
-              </svg>
-              Telegram</a
-            >
+          <li>
+            <a>Я обожнюю проводити вільний час за відеоіграми, в основному
+              <em>головоломки</em></a>
           </li>
         </ul>
       </div>
+    </div>
+    <div data-scroll-section class="block3" id="parrots"  data-scroll=""
+    data-scroll-repeat="true"
+    data-scroll-call="parrot">
+      <div class="textblock3" data-scroll data-scroll-speed="5">
+        <p class="h3">Папуги</p>
+        <p class="parrot">
+          Я власниця <em>4 милих папужок</em>. Вони вже старенькі, але за своє
+          життя так і не привикли до рук та не навчиличь говорити Але я все
+          одно їх дуже люблю :)
+        </p>
+        <p class="names">Їх імена:</p>
+        <ul class="name" style="color: #a7927a">
+          <li>Данка</li>
+          <li>Арсенчик</li>
+          <li>Фіонка</li>
+          <li>Граф</li>
+        </ul>
+        <p class="extra">(Cправа ви бачите фото Фіонки)</p>
+      </div>
+      <div data-scroll data-scroll-speed="8" class="photos-item" ><img  class="fhiona" src="images/Fhiona.jpg" width="15%" title="Фіонка" /></div>
+    </div>
+    <div data-scroll-section class="block4" id="sushi"  data-scroll=""
+    data-scroll-repeat="true"
+    data-scroll-call="sushi">
+      <a data-scroll data-scroll-speed="8" class="sushilink" href="https://www.youtube.com/watch?v=40MiH9-FQ5w&t=4s" target="_blank"><img class="sushi"
+          src="images/sushi.jpg" width="15%" title="Футомакі з лососем" /></a>
+      <div data-scroll data-scroll-speed="5" class="textblock4">
+        <p class="h4">Cуші</p>
+        <p class="food">
+          Досить велику частину мене займає моя любов до
+          <em>кулінарії</em>, але окрім цього я працювала сушистом у двох
+          закладах. Один з цих закладів був
+          <a class="noa" href="https://noa.ua/en/" target="_blank" style="color: #a1918d">ресторан НОА</a>. Надіюсь, я
+          більше ніколи не повернусь на кухню, а буду готувати
+          лише для себе та своїх близьких
+        </p>
+        <p class="extra2">(тримайте картинку мого першого рола)</p>
+      </div>
+    </div>
+    <div data-scroll-section class="block5" id="photo"  data-scroll=""
+    data-scroll-repeat="true"
+    data-scroll-call="photo">
+      <div data-scroll data-scroll-speed="4" class="textblock5" >
+        <p class="h5">Фото</p>
+        <p class="photo">
+          Раніше я дуже захоплюваласть
+          <em>Фотографією</em>, тому ловіть декілька світлин з моєї колеції
+        </p>
+      </div>
+      <div data-scroll data-scroll-speed="5" class="photos" id="lightgallery">
+        <div div class="photofirst">
+          <div class="photos-item">
+            <a href="images/Photo_1.jpg" target="_blank"><img class="photo1" src="images/Photo_1.jpg" width="15%" title="Захід сонця"
+                alt="Захід сонця" /></a>
+          </div>
+          <div class="photos-item">
+            <a href="images/Photo_2.jpg" target="_blank"><img class="photo2" src="images/Photo_2.jpg" width="15%" title="Вечірка"
+                alt="Вечірка" /></a>
+          </div>
+        </div>
+        <div class="photosecond">
+          <div class="photos-item">
+            <a href="images/Photo_3.jpg" target="_blank"><img class="photo3" src="images/Photo_3.jpg" width="15%" title="Котик"
+                alt="Котик" /></a>
+          </div>
+          <div class="photos-item">
+            <a href="images/Photo_4.jpg" target="_blank"><img class="photo4" src="images/Photo_4.jpg" width="15%" title="Нутелла"
+                alt="Нутелла" /></a>
+          </div>
+          <div class="photos-item">
+            <a href="images/Photo_5.jpg" target="_blank"><img class="photo5" src="images/Photo_5.jpg" width="15%" title="Лісопарк"
+                alt="Лісопарк" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <div class="parallax1" data-scroll data-scroll-speed="4"></div>
-      <div class="parallax2" id="psecond"></div>
-      <div class="parallax3" id="pthird"></div>
-      <div class="parallax4" id="pfour"></div>
-      <div class="parallax5" id="pfive"></div>
-    </section>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/lightgallery.min.js"></script>
+    <div class="block6" id="contacts" data-scroll-section  data-scroll=""
+    data-scroll-repeat="true"
+    data-scroll-call="contacts">
+      <p class="textcontacts">Посилання на мої соц мережі</p>
+      <ul class="linkcontacts">
+        <li class="steam">
+          <a class="links" href="https://steamcommunity.com/profiles/76561199041801371/" target="_blank">
+            <svg version="1.1" class="steam-svg" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32"
+              style="enable-background: new 0 0 32 32" xml:space="preserve" fill="#ffffff">
+              <g>
+                <path class="st1"
+                  d="M11.1,22.9c0.6,0.3,1.3,0.2,1.7-0.4c0.5-0.6,0.3-1.5-0.4-1.9l-3.3-2c-0.7,0.6-1.1,1.5-1.3,2.4L11.1,22.9z" />
+                <path class="st1" d="M16,2.2C8.9,2.2,3,7.6,2.2,14.6l6.9,4.1c0.7-0.7,1.7-1.1,2.8-1.1l2.8-4.3c0-3.1,2.5-5.6,5.6-5.6
+           s5.6,2.5,5.6,5.6s-2.5,5.6-5.6,5.6L16,21.6c0,2.3-1.8,4.1-4.1,4.1s-4.1-1.8-4.1-4.1c0-0.2,0-0.4,0-0.6l-5.5-3.1
+           C3.2,24.6,9,29.8,16,29.8c7.6,0,13.8-6.2,13.8-13.8C29.8,8.4,23.6,2.2,16,2.2z" />
+                <circle class="st1" cx="20.2" cy="13.3" r="2.8" />
+              </g>
+              <path class="st1"
+                d="M12.4,20.6l-3.3-2c-0.7,0.6-1.1,1.5-1.3,2.4l3.2,1.8c0.6,0.3,1.3,0.2,1.7-0.4C13.3,21.9,13.1,21,12.4,20.6z" />
+            </svg>
+            Steam</a>
+        </li>
+        <li class="behance">
+          <a class="links" href="https://www.behance.net/olena_viytovych" target="_blank">
+            <svg version="1.1" class="behance-svg" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32"
+              style="enable-background: new 0 0 32 32" xml:space="preserve" fill="#ffffff">
+              <path class="st1" d="M10.8,12.4v3c0,0,2.7,0.4,2.7-1.4S12,12.4,10.8,12.4z" />
+              <path class="st1" d="M10.8,17.1v3c0,0,2.7,0.4,2.7-1.4C13.5,17.1,12.4,17.1,10.8,17.1z" />
+              <path class="st1" d="M25.8,4.2H6.6C5.1,4.2,4,5.4,4,6.8v19.2c0,1.4,1.2,2.6,2.6,2.6h19.2c1.4,0,2.6-1.2,2.6-2.6V6.8
+	C28.4,5.4,27.2,4.2,25.8,4.2z M18.1,10.7h5V12h-5V10.7z M13.1,22.2H8.7V10.7c0,0,3.6,0,4.3,0c0.7,0,2.8,0.6,2.8,2.8
+	c0,1.9-1.5,2.7-1.5,2.7s1.6,0.4,1.6,2.7C15.9,22.1,13.1,22.2,13.1,22.2z M24.4,18.6l-4.7,0c0,0.8,0.4,2,1.5,2
+	c1.3,0.1,2.1-0.8,2.1-0.8l1,1.2c-0.9,0.9-1.4,1.3-3.2,1.3c-2.4,0-3.4-2-3.4-4.4c0-2.5,0.8-4.4,3.4-4.4c2.4,0,3.2,2,3.2,4.4
+	C24.4,18.1,24.4,18.3,24.4,18.6z" />
+              <path class="st1" d="M19.8,17.1h2.3c0,0,0.3-2-1-2C19.8,15.1,19.8,15.9,19.8,17.1z" />
+            </svg>
 
-    <script type="text/javascript">
-      lightGallery(document.getElementById("lightgallery"), {
-        selector: ".gallery-item a",
+            Behance</a>
+        </li>
+        <li class="instagram">
+          <a class="links" href="https://www.instagram.com/lenaaaa.vijt_" target="_blank"><svg version="1.1"
+              class="instagram-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 32 32" style="enable-background: new 0 0 32 32" xml:space="preserve"
+              fill="#ffffff">
+              <circle class="st1" cx="16" cy="16" r="4.2" />
+              <path class="st1" d="M21.2,3.3H10.9c-4.2,0-7.6,3.4-7.6,7.6v10.3c0,4.2,3.4,7.6,7.6,7.6h10.3c4.2,0,7.6-3.4,7.6-7.6V10.9
+           C28.7,6.7,25.3,3.3,21.2,3.3z M16,22.9c-3.8,0-6.9-3.1-6.9-6.9s3.1-6.9,6.9-6.9c3.8,0,6.9,3.1,6.9,6.9S19.8,22.9,16,22.9z M24.2,8.8
+           c-0.8,0-1.4-0.6-1.4-1.4c0-0.8,0.6-1.4,1.4-1.4s1.4,0.6,1.4,1.4C25.6,8.2,25,8.8,24.2,8.8z" />
+            </svg>
+            Instagram</a>
+        </li>
+        <li class="telegram">
+          <a class="links" href="https://t.me/lttlandromeda" target="_blank"><svg version="1.1" class="telegram-svg"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 32 32" style="enable-background: new 0 0 32 32" xml:space="preserve" fill="#ffffff">
+              <path class="st1" d="M25.9,3.2L3,12.7c-2.3,1-2.2,4.3,0.2,5.1l5.2,1.7c0,0,0.1,0,0.1,0.1l1.8,5.5c0.7,2.2,3.6,2.7,5,0.9l1.5-1.9
+           c0-0.1,0.1-0.1,0.2,0l4,3.7c1.6,1.5,4.3,0.7,4.8-1.5L30,6.6C30.5,4.2,28.2,2.2,25.9,3.2z M26.6,6.7L23,25.3c0,0.2-0.2,0.3-0.4,0.1
+           l-5.6-4.8c-0.1-0.1-0.2-0.1-0.3,0l-3,2.5c-0.2,0.1-0.4,0-0.4-0.2l0.6-3.6c0,0,0-0.1,0.1-0.1l7.5-7.8c0.2-0.2,0-0.5-0.3-0.4L10,17.2
+           c-0.1,0-0.1,0-0.2,0l-4.2-1.7c-0.2-0.1-0.2-0.4,0-0.4l20.6-8.6C26.4,6.4,26.6,6.6,26.6,6.7z" />
+            </svg>
+            Telegram</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  <script src="locomotive-scroll.min.js"></script>
+  <script>
+    (function () {
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true
       });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/menuspy@latest/dist/menuspy.min.js"></script>
-    <script>
-      
+    })();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/menuspy@latest/dist/menuspy.min.js"></script>
+  <script>
     var elm = document.querySelector(".header .menu");
     var ms = new MenuSpy(elm);
-  
-    </script>
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/lightgallery.min.js"></script>
 
-<script src="locomotive-scroll.min.js"></script>
-<script>
-    (function () {
-        var scroll = new LocomotiveScroll();
-    })();
-</script>
-<script type="text/javascript" src="https://locomotive.ca/assets/scripts/vendors.js?v=202209210800"></script>
+  <script type="text/javascript">
+    lightGallery(document.getElementById("lightgallery"), {
+      selector: ".photos-item a",
+    });
+  </script>
+  <script src="mobile.js"></script>
 
-  </body>
+</body>
 </html>

@@ -1,0 +1,53 @@
+/* @media (prefers-color-scheme: light){ */
+body {
+  background-color: rgba(248, 243, 234, 1);
+  color: rgba(55, 37, 14, 1);
+}
+.introdusion {
+  background-image: url(images/Block1.png);
+}
+.navbar {
+  background-color: rgba(238, 238, 238, 1);
+}
+.logo {
+  color: rgba(44, 44, 46, 1);
+}
+.menu a {
+  color: rgba(44, 44, 46, 1);
+}
+.block2 {
+  background: rgba(213, 199, 172, 1);
+}
+.extra {
+  color: rgba(163, 141, 98, 1);
+}
+.block3 {
+  background-color: rgba(248, 243, 234, 1);
+}
+.block4 {
+  background: rgba(213, 199, 172, 1);
+}
+.block5 {
+  background-color: rgba(248, 243, 234, 1);
+}
+.block6 {
+  background-color: rgba(255, 255, 255, 1);
+}
+.linkcontacts {
+  color: rgba(44, 44, 46, 1);
+}
+.links {
+  color: rgba(44, 44, 46, 1);
+}
+.textblock4 em {
+  color: rgba(137, 95, 45, 1);
+}
+.textblock2 em {
+  color: rgba(137, 95, 45, 1);
+}
+.textblock3 em {
+  color: rgba(137, 95, 45, 1);
+}
+.textblock5 em {
+  color: rgba(137, 95, 45, 1);
+}
