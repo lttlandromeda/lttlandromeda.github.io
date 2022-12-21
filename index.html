@@ -15,7 +15,6 @@
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
-  <link rel="stylesheet" href="css/style.css" />
   <meta property="og:image" content="https://lttlandromeda.github.io/introdusion.jpg" />
   <meta name="description" content="Невеликий сайтик на якому ви дізнаєтесь трохи фактів про мене :)" />
   <meta charset="UTF-8" />
@@ -48,9 +47,10 @@
     </div>
   </div>
   <div data-scroll-container>
-    <div data-scroll-section class="introdusion"  data-scroll=""
+    <div data-scroll-section class="introdusion" id="logo">
+    <div data-scroll=""
     data-scroll-repeat="true"
-    data-scroll-call="logo" id="logo">
+    data-scroll-call="logo" ></div>
       <div data-scroll data-scroll-speed="8" class="textblock1">
         <h1>Привіт!</h1>
         <h2>Мене звати Олена!</h2>
@@ -60,9 +60,10 @@
         </p>
       </div>
     </div>
-    <div data-scroll-section class="block2" id="aboutme"  data-scroll=""
+    <div data-scroll-section class="block2" id="aboutme" >
+    <div data-scroll=""
     data-scroll-repeat="true"
-    data-scroll-call="aboutme">
+    data-scroll-call="aboutme"></div>
       <div data-scroll  data-scroll-speed="8" class="photos-item"><img  class="me" src="images/MEE.jpg" 
         title="Моя фотографія" /></div>
       <div data-scroll data-scroll-speed="5" class="textblock2">
@@ -93,14 +94,15 @@
         </ul>
       </div>
     </div>
-    <div data-scroll-section class="block3" id="parrots"  data-scroll=""
+    <div data-scroll-section class="block3" id="parrots"  >
+    <div data-scroll=""
     data-scroll-repeat="true"
-    data-scroll-call="parrot">
+    data-scroll-call="parrots"></div>
       <div class="textblock3" data-scroll data-scroll-speed="5">
         <p class="h3">Папуги</p>
         <p class="parrot">
           Я власниця <em>4 милих папужок</em>. Вони вже старенькі, але за своє
-          життя так і не привикли до рук та не навчиличь говорити Але я все
+          життя так і не звикли до рук та не навчились говорити. Але я все
           одно їх дуже люблю :)
         </p>
         <p class="names">Їх імена:</p>
@@ -114,9 +116,10 @@
       </div>
       <div data-scroll data-scroll-speed="8" class="photos-item" ><img  class="fhiona" src="images/Fhiona.jpg" width="15%" title="Фіонка" /></div>
     </div>
-    <div data-scroll-section class="block4" id="sushi"  data-scroll=""
-    data-scroll-repeat="true"
-    data-scroll-call="sushi">
+    <div data-scroll-section class="block4" id="sushi">
+      <div data-scroll=""
+      data-scroll-repeat="true"
+      data-scroll-call="sushi"></div>
       <a data-scroll data-scroll-speed="8" class="sushilink" href="https://www.youtube.com/watch?v=40MiH9-FQ5w&t=4s" target="_blank"><img class="sushi"
           src="images/sushi.jpg" width="15%" title="Футомакі з лососем" /></a>
       <div data-scroll data-scroll-speed="5" class="textblock4">
@@ -132,9 +135,11 @@
         <p class="extra2">(тримайте картинку мого першого рола)</p>
       </div>
     </div>
-    <div data-scroll-section class="block5" id="photo"  data-scroll=""
-    data-scroll-repeat="true"
-    data-scroll-call="photo">
+    <div data-scroll-section class="block5" id="photo">
+      <div data-scroll=""
+      data-scroll-repeat="true"
+      data-scroll-call="photo"></div>
+
       <div data-scroll data-scroll-speed="4" class="textblock5" >
         <p class="h5">Фото</p>
         <p class="photo">
@@ -170,9 +175,10 @@
       </div>
     </div>
 
-    <div class="block6" id="contacts" data-scroll-section  data-scroll=""
-    data-scroll-repeat="true"
-    data-scroll-call="contacts">
+    <div class="block6" id="contacts" data-scroll-section >
+      <div data-scroll=""
+      data-scroll-repeat="true"
+      data-scroll-call="contacts"></div>
       <p class="textcontacts">Посилання на мої соц мережі</p>
       <ul class="linkcontacts">
         <li class="steam">
@@ -240,16 +246,58 @@
   <script src="locomotive-scroll.min.js"></script>
   <script>
     (function () {
-      const scroll = new LocomotiveScroll({
-        el: document.querySelector('[data-scroll-container]'),
-        smooth: true
-      });
+
+ const scroll = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
+    scrollFromAnywhere: true,
+    multiplier: 1,
+    getDirection: true,
+    reloadOnContextChange: true,
+  });
+
+  let ignoreScrollCall = false;
+  const elMenu = document.querySelector(".menu"); // перевір селектор із своїм кодом (!)
+
+  // Add .active class on buttons when scrolling (highlight it)
+  // scroll -- const scroll = new LocomotiveScroll({...
+
+  scroll.on("call", (callValue) => {
+    // console.log(callValue, ignoreScrollCall);
+    if (!ignoreScrollCall) {
+      const elId = "#" + callValue;
+      const elSection = document.querySelector(elId);
+      if (elSection) {
+        elMenu.querySelectorAll("li").forEach((item) => {
+          item.classList.remove("active");
+          const a = item.querySelector("a");
+          console.log(a.getAttribute("href"));
+          if (elId == a?.getAttribute("href")) {
+            console.log(">>", elId, a, item);
+            item.classList.add("active");
+          }
+        });
+      }
+    } else {
+      // console.log("??", ignoreScrollCall);
+    }
+  });
+
+  // Add .active class to the current button on click (highlight it)
+  elMenu.querySelectorAll("a").forEach((item) => {
+    item.addEventListener("click", function () {
+      const current = elMenu.querySelector("li.active");
+      current?.classList?.remove("active");
+      const parent = this.parentElement;
+      parent?.classList?.add("active");
+      ignoreScrollCall = true;
+      setTimeout(() => {
+        ignoreScrollCall = false;
+      }, 1000);
+    });
+  });
+
     })();
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/menuspy@latest/dist/menuspy.min.js"></script>
-  <script>
-    var elm = document.querySelector(".header .menu");
-    var ms = new MenuSpy(elm);
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/lightgallery.min.js"></script>
 
@@ -259,6 +307,6 @@
     });
   </script>
   <script src="mobile.js"></script>
-
+  <script src="activeclasss.js"></script>
 </body>
 </html>

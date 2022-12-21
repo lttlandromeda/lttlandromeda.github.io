@@ -1,4 +1,4 @@
-/* @media (prefers-color-scheme: light){ */
+@media (prefers-color-scheme: light){
 body {
   background-color: rgba(248, 243, 234, 1);
   color: rgba(55, 37, 14, 1);
@@ -50,4 +50,5 @@ body {
 }
 .textblock5 em {
   color: rgba(137, 95, 45, 1);
+}
 }
