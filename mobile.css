@@ -22,7 +22,6 @@
     display: block;
     justify-content: center;
     align-items: center;
-    background-color: black;
     cursor: pointer;
     position: relative;
   }
@@ -110,7 +109,7 @@
     gap: 10px;
   } */
   .block2 {
-    min-height: 110vh;
+    min-height: 140vh;
     min-width: 90vw;
     display: flex;
     flex-direction: column;
@@ -128,7 +127,7 @@
     width: 45%;
   }
   .block3 {
-    min-height: 130vh;
+    min-height: 140vh;
     min-width: 90vw;
 
     display: flex;
@@ -147,7 +146,7 @@
     width: 55%;
   }
   .block4 {
-    min-height: 110vh;
+    min-height: 140vh;
     min-width: 90vw;
     display: flex;
     flex-direction: column;
